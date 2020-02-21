@@ -36,7 +36,7 @@
                     transform: scale(10) rotate(360deg);
                 }
                 100% {
-                    transform: scale(1) rotate(1080 deg);
+                    transform: scale(1) rotate(1080deg);
                 }
             }
         </style>
@@ -45,11 +45,13 @@
         <div id="app">          
             <div class="container text-danger">
                 <div class="card mt-5">
-                    <h2 class="card-header">Near-Earth Objects</h2>
-
-                    <transition name="spin" appear>
-                        <span style="display:inline-block"></span>
-                    </transition>                   
+                    <h2 class="card-header">Near-Earth
+                        <transition name="spin" appear>
+                            <span style="display:inline-block">
+                                Objects
+                            </span>
+                        </transition>   
+                    </h2>                
 
                     <transition name="shooting-star">
                         <div class="m-3 text-primary" v-cloak v-if="numAsteroids > 0 && showSummary">
